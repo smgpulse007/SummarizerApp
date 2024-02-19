@@ -19,6 +19,10 @@ def summarize_document(api_key, document_text):
 st.title('Document and Text Summarizer')
 st.write('This app uses OpenAI\'s GPT model to summarize documents or text. Please input your OpenAI API Key and upload a document or paste the text below.')
 
+# Display an image
+image_path = 'landing_page_image.jpg'  # Replace 'landing_page_image.jpg' with your image file name
+st.image(image_path, caption='Transforming Information with AI: From Text Overload to Concise Summaries', use_column_width=True)
+
 # Input for OpenAI API Key
 api_key = st.text_input("OpenAI API Key", type="password")
 
